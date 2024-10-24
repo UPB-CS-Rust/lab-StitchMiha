@@ -3,9 +3,9 @@
 //! function.
 
 fn main() {
-    let s0 = String::new();
+    let _s0 = String::new();
 
-    let mut s1 = create_string(s0);
+    let mut s1 = create_string(); // because we are no longer passing any value here we need to remove it 
 
     println!("{} == `{}`", stringify!(s1), s1);
 
@@ -16,7 +16,7 @@ fn main() {
 
 ///`create_string()` no longer takes `s: String` as argument
 fn create_string() -> String {
-    let mut s = s;
+    let s = String::from("Hello"); // like this it creates a string froom the function
 
     s
 }
