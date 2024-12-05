@@ -85,6 +85,8 @@ fn main() {
     test(sub(Var, Var));
     test(add(sub(Var, Const(5)), Const(5)));
     test(Summation(vec![Var, Const(1)]));
+    test(mul(5, 6))
+    test(div(15, 5))
 }
 
 #[cfg(test)]
